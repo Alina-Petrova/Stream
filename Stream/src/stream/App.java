@@ -5,14 +5,15 @@
  */
 package stream;
 
+import java.lang.module.ModuleFinder;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
+import javax.sound.sampled.BooleanControl;
 
 /**
  *
@@ -23,6 +24,8 @@ public class App {
     private static Supplier<Stream<String>> nomi = () -> Stream.of("Paola", "Mario", "Alfonso", "Giuseppe", "Stefania", "Annamaria", "Marco", "Massimo", "Paola", "Cristian", "Rosella", "Alfonso");
 
     public static void main(String[] args) {
+        
+
 
         nomi.get().distinct()
                 .sorted()
